@@ -37,6 +37,9 @@ Extract the source ZIP before uploading it. GitHub must preserve the
 files from inside those directories into the repository root will break Python
 imports and the build workflow.
 
+`launcher.py` must also remain in the repository root. It is the executable's
+entry point and imports the `openreel` package using an absolute import.
+
 Creating a tag such as `v0.1.0` also creates a GitHub Release containing the
 portable ZIP.
 

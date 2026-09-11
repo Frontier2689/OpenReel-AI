@@ -10,7 +10,7 @@ for name in ("ffmpeg.exe", "ffprobe.exe"):
         binaries.append((str(path), "bin"))
 
 a = Analysis(
-    ["openreel/__main__.py"],
+    ["launcher.py"],
     pathex=[str(root)],
     binaries=binaries,
     hiddenimports=["keyring.backends.Windows"],
